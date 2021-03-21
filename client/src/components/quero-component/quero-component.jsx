@@ -14,7 +14,7 @@ function callServer() {
   });
 }
 
-export function queroComponent() {
+export function QueroComponent() {
   return (
     <div>
       {callServer()}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { queroComponent } from 'components';
+import { QueroComponent } from 'components';
 
 function App() {
   return (
-    <queroComponent />
+    <QueroComponent />
   );
 }
 

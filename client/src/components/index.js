@@ -1,1 +1,1 @@
-export { queroComponent } from './quero-component/quero-component';
+export { QueroComponent } from './quero-component/quero-component';
