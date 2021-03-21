@@ -11,4 +11,8 @@ blocks:
         - name: docker build
           commands:
             - checkout
-            - docker build -t your-image .
+            - cd server
+            - nmp install
+            - cd ..
+            - docker-compose build
+            - docker-compose up -d
