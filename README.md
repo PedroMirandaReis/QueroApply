@@ -2,12 +2,15 @@
 
 Prerequisites:
   -Docker installed
+  -npm installed
 
 ---
 
 1. Clone this repository
-2. Run `docker-compose build`
-3. Run `docker-compose up -d`
+2. cd server
+3. Run `npm install`
+4. Run `docker-compose build`
+5. Run `docker-compose up -d`
 
 ---
 

@@ -1,1 +1,1 @@
-export { SampleComponent } from './sample-component/sample-component';
+export { queroComponent } from './quero-component/quero-component';
