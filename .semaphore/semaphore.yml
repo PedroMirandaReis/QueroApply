@@ -12,7 +12,7 @@ blocks:
           commands:
             - checkout
             - 'sudo echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin'
-            - 'docker pull "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" || true'
+            - 'docker pull "${DOCKER_USERNAME}/QueroApply:latest" || true'
             - 'docker build --cache-from "${DOCKER_USERNAME}/QueroApply:latest" -t "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" .'
             - 'docker push "${DOCKER_USERNAME}/QueroApply:latest"'
       secrets:
