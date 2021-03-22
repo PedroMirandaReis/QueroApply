@@ -12,9 +12,9 @@ blocks:
           commands:
             - checkout
             - 'sudo echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin'
-            - 'docker pull "${DOCKER_USERNAME}/queroapply:latest" || true'
-            - 'docker build --cache-from "${DOCKER_USERNAME}/queroapply:latest" -t "${DOCKER_USERNAME}/queroapply:latest" .'
-            - 'docker push "${DOCKER_USERNAME}/queroapply:latest"'
+            - 'sudo docker pull "${DOCKER_USERNAME}/queroapply:latest" || true'
+            - 'sudo docker build --cache-from "${DOCKER_USERNAME}/queroapply:latest" -t "${DOCKER_USERNAME}/queroapply:latest" .'
+            - 'sudo docker push "${DOCKER_USERNAME}/queroapply:latest"'
       secrets:
         - name: dockerhub
       agent:
