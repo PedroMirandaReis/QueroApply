@@ -14,7 +14,7 @@ blocks:
             - 'sudo docker login "${DOCKER_PASSWORD}" -u "${DOCKER_USERNAME}" --password-stdin'
             - 'sudo docker pull "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" || true'
             - 'sudo docker build --cache-from "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" -t "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" .'
-            - 'sudo docker push "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest"'
+            - 'sudo docker push "${DOCKER_USERNAME}/queroapplytest:latest"'
       secrets:
         - name: dockerhub
       agent:
