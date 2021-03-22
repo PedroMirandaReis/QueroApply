@@ -11,7 +11,7 @@ blocks:
         - name: docker build
           commands:
             - checkout
-            - 'sudo echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin'
+            - 'sudo docker login "${DOCKER_PASSWORD}" -u "${DOCKER_USERNAME}" --password-stdin'
             - 'docker pull "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" || true'
             - 'docker build --cache-from "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" -t "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" .'
             - 'docker push "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest"'
