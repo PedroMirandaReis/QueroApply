@@ -12,9 +12,9 @@ blocks:
           commands:
             - checkout
             - 'sudo docker login "${DOCKER_PASSWORD}" -u "${DOCKER_USERNAME}" --password-stdin'
-            - 'docker pull "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" || true'
-            - 'docker build --cache-from "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" -t "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" .'
-            - 'docker push "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest"'
+            - 'sudo docker pull "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" || true'
+            - 'sudo docker build --cache-from "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" -t "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest" .'
+            - 'sudo docker push "${DOCKER_USERNAME}/dockerizing-nodejs-addressbook:latest"'
       secrets:
         - name: dockerhub
       agent:
