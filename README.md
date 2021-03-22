@@ -16,8 +16,8 @@ Prerequisites:
 
 On a browser of your choice:
 
-  -`http://localhost:3000/` for client, check console for get from server
+  -`http://localhost:3000/` for client, get from server on screen
 
   -`http://localhost:8000/` for server, get from database on screen
 
-  -`http://localhost:8080/` for phpadmin, *User*:querouser *Password*:queropassword
+  -`http://localhost:8080/` for phpadmin, **User**:querouser **Password**:queropassword
