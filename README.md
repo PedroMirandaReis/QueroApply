@@ -21,4 +21,4 @@ On a browser of your choice:
 
   -`http://localhost:8000/` for server, get from database on screen
 
-  -`http://localhost:8080/` for phpadmin, **User**:querouser **Password**:queropassword
+  -`http://localhost:8080/` for phpadmin, **User**: querouser **Password**: queropassword
